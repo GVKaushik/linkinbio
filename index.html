@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta charset="UTF-8">
       <title> GVK's home page</title>
       <style>
@@ -24,6 +25,9 @@
         }
         .Link {
           background-color: rgba(220, 0, 0, 0.8);
+          margin-bottom: 20px;
+          display: flex;
+          align-items: center;
         }
       </style>
       <style>
@@ -34,6 +38,10 @@
           object-position: top;
           border: thick double #f4eeee00;
         }
+        .main-container{
+          max-width: 640px;
+          margin: auto;
+        }
       </style>
       <style>
         .thumbnail{
@@ -42,6 +50,23 @@
           border-radius: 48px;
           object-fit:cover;
           
+        }
+        .image-row{
+          margin-bottom: 20px;
+          text-align: center;
+        }
+        .name-row{
+          margin-bottom: 20px;
+          text-align: center;
+        }
+        .social-media{
+          margin-bottom: 20px;
+          display:flex;
+          justify-content: space-around;
+        }
+        .link-text{
+          text-align: center;
+          flex-grow: 1;
         }
       </style>
       
@@ -54,7 +79,7 @@
         <div class="name-row">
           GVK
         </div>
-        <div class="icons for social media">
+        <div class="social-media">
           <a href="https://www.instagram.com/gvkaushik/" target="_blank">
             Instagram
           </a>
@@ -70,25 +95,25 @@
         <div class="links">
           <div class="Link">
             <img class ="thumbnail" src="vicky-adams-gywHscPZwMM-unsplash.jpg">
-            <a target="_blank" href="https://www.espncricinfo.com/">
+            <a class="link-text" target="_blank" href="https://www.espncricinfo.com/">
               Follow the latest cricket news
             </a>
           </div>
           <div class="Link">
             <img class ="thumbnail" src="connor-coyne-OgqWLzWRSaI-unsplash.jpg">
-            <a target="_blank" href="https://www.goal.com/en-in">
+            <a class="link-text" target="_blank" href="https://www.goal.com/en-in">
               Follow the latest football/soccer news
             </a>
           </div>
           <div class="Link">
             <img class ="thumbnail" src="galen-crout-MvkyyiZy1JQ-unsplash.jpg">
-            <a target="_blank" href="https://colonist.io/?matchmakingqueue=2">
+            <a class="link-text" target="_blank" href="https://colonist.io/?matchmakingqueue=2">
               Let's play Catan
             </a>    
           </div>
           <div class="Link">
             <img class ="thumbnail" src="piotr-makowski-27LH_0jXKYI-unsplash.jpg">
-            <a target="_blank" href="https://lichess.org/">
+            <a class="link-text" target="_blank" href="https://lichess.org/">
               Let's play Chess
             </a>
           </div>
